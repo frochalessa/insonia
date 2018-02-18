@@ -4,6 +4,6 @@ services:
     build: .
     command: bundle exec puma -C config/puma.rb
     volumes:
-      - /var/www/insonia
+      - .:/var/www/insonia
     ports:
       - "3000:3000"
